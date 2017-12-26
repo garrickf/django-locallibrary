@@ -27,10 +27,10 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', SECRET_KEY)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 # import debug mode as an environment variable.
-DEBUG = os.environ.get('DJANGO_DEBUG_MODE', DEBUG)
+DEBUG = os.environ.get('DJANGO_DEBUG', DEBUG)
 
 # TODO: fill this with the website the site is hosted on.
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [os.environ.get('DJANGO_ALLOWED_HOSTS', '')]
 
 
 # Application definition
