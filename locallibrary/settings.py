@@ -30,7 +30,7 @@ DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', DEBUG)
 
 # TODO: fill this with the website the site is hosted on.
-ALLOWED_HOSTS = [os.environ.get('DJANGO_ALLOWED_HOSTS', '')]
+ALLOWED_HOSTS = [os.environ.get('DJANGO_ALLOWED_HOSTS', ''), '127.0.0.1']
 
 
 # Application definition
